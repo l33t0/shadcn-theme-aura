@@ -1,0 +1,89 @@
+/* Aura pulse — two offset cycles for organic movement */
+@keyframes aura-pulse-slow {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes aura-pulse-fast {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 0.9; }
+}
+
+/* Terminal cursor blink */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Status dot pulse */
+@keyframes status-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Avatar ring rotation */
+@keyframes avatar-ring-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Aura glow — apply to a container for ambient purple haze */
+.aura-glow {
+  position: relative;
+}
+
+.aura-glow::before,
+.aura-glow::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(120px);
+}
+
+.aura-glow::before {
+  top: -20%;
+  left: 30%;
+  width: 40%;
+  height: 50%;
+  background: var(--aura-1, #a277ff);
+  opacity: 0.08;
+  animation: aura-pulse-slow 8s ease-in-out infinite;
+}
+
+.aura-glow::after {
+  bottom: -10%;
+  right: 10%;
+  width: 35%;
+  height: 45%;
+  background: var(--aura-2, #8455d4);
+  opacity: 0.06;
+  animation: aura-pulse-fast 12s ease-in-out infinite;
+}
+
+/* Utility classes */
+.cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+.status-dot {
+  animation: status-pulse 3s ease-in-out infinite;
+}
+
+.avatar-ring {
+  animation: avatar-ring-rotate 8s linear infinite;
+}
+
+/*
+ * Effects requiring DOM/JS (not included, documented for reference):
+ *
+ * Mouse-following light:
+ *   Create a 600px radial gradient div that tracks cursor at 4% opacity.
+ *   Hide on (hover: none) devices.
+ *
+ * Noise texture:
+ *   <svg width="0" height="0"><filter id="noise">
+ *     <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" />
+ *   </filter></svg>
+ *   Apply as a fixed overlay at 3% opacity with pointer-events: none.
+ */

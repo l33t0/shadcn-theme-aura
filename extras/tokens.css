@@ -1,0 +1,36 @@
+:root {
+  /* Depth layers */
+  --bg-primary: #15141b;
+  --bg-elevated: #1c1b26;
+  --bg-surface: #222131;
+
+  /* Text hierarchy */
+  --text-primary: #edecee;
+  --text-secondary: #a09fa6;
+  --text-tertiary: #6d6d6d;
+
+  /* Spot accents (Aura secondary colors) */
+  --accent-green: #61ffca;
+  --accent-orange: #ffca85;
+  --accent-pink: #f694ff;
+  --accent-blue: #82e2ff;
+  --accent-red: #ff6767;
+
+  /* Accent modifiers */
+  --accent-dim: rgba(162, 119, 255, 0.15);
+  --accent-glow: rgba(162, 119, 255, 0.08);
+
+  /* Gradient stops */
+  --aura-1: #a277ff;
+  --aura-2: #8455d4;
+  --aura-3: #c4a1ff;
+
+  /* Borders & selection */
+  --border-default: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.12);
+  --selection: #29263c;
+}
+
+::selection {
+  background: var(--selection);
+}

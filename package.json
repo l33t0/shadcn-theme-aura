@@ -1,7 +1,7 @@
 {
   "name": "@l33t0/shadcn-aura-theme",
   "version": "0.1.0",
-  "description": "Aura theme for shadcn/ui - all four variants",
+  "description": "Aura theme for shadcn/ui - colors, typography, motion, and effects",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,12 +12,16 @@
   },
   "files": [
     "themes/",
+    "extras/",
     "index.css",
+    "full.css",
     "LICENSE"
   ],
   "exports": {
     ".": "./index.css",
-    "./themes/*": "./themes/*"
+    "./full": "./full.css",
+    "./themes/*": "./themes/*",
+    "./extras/*": "./extras/*"
   },
   "keywords": [
     "shadcn",
