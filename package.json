@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/l33t0/shadcn-theme-aura.git"
+    "url": "git+https://github.com/l33t0/shadcn-theme-aura.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
