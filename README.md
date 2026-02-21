@@ -4,11 +4,11 @@
 
 ## Variants
 
-| Variant | Background | Colors |
-|---------|-----------|--------|
-| `aura-dark` | Dark (`#15141b`) | Vivid |
-| `aura-dark-soft-text` | Dark (`#15141b`) | Desaturated |
-| `aura-soft-dark` | Lighter dark (`#21202e`) | Vivid |
+| Variant                    | Background               | Colors      |
+| -------------------------- | ------------------------ | ----------- |
+| `aura-dark`                | Dark (`#15141b`)         | Vivid       |
+| `aura-dark-soft-text`      | Dark (`#15141b`)         | Desaturated |
+| `aura-soft-dark`           | Lighter dark (`#21202e`) | Vivid       |
 | `aura-soft-dark-soft-text` | Lighter dark (`#21202e`) | Desaturated |
 
 ## Install
@@ -41,26 +41,28 @@ The bare import (`@l33t0/shadcn-aura-theme`) defaults to `aura-dark`.
 
 ### Vivid
 
-| Role | Hex |
-|------|-----|
+| Role   | Hex       |
+| ------ | --------- |
 | Purple | `#a277ff` |
-| Green | `#61ffca` |
+| Green  | `#61ffca` |
 | Orange | `#ffca85` |
-| Pink | `#f694ff` |
-| Blue | `#82e2ff` |
-| Red | `#ff6767` |
+| Pink   | `#f694ff` |
+| Blue   | `#82e2ff` |
+| Red    | `#ff6767` |
 
 ### Soft
 
-| Role | Hex |
-|------|-----|
+| Role   | Hex       |
+| ------ | --------- |
 | Purple | `#8464c6` |
-| Green | `#54c59f` |
+| Green  | `#54c59f` |
 | Orange | `#c7a06f` |
-| Pink | `#c17ac8` |
-| Blue | `#6cb2c7` |
-| Red | `#c55858` |
+| Pink   | `#c17ac8` |
+| Blue   | `#6cb2c7` |
+| Red    | `#c55858` |
 
 ## License
 
-MIT. Colors from [Aura Theme](https://github.com/daltonmenezes/aura-theme) by Dalton Menezes (MIT).
+MIT.
+
+Colors from [Aura Theme](https://github.com/daltonmenezes/aura-theme) by Dalton Menezes (MIT).
