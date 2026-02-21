@@ -1,0 +1,31 @@
+{
+  "name": "@l33t0/shadcn-aura-theme",
+  "version": "0.1.0",
+  "description": "Aura theme for shadcn/ui - all four variants",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l33t0/shadcn-theme-aura.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "themes/",
+    "index.css",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./index.css",
+    "./themes/*": "./themes/*"
+  },
+  "keywords": [
+    "shadcn",
+    "shadcn-ui",
+    "aura",
+    "theme",
+    "dark-theme",
+    "tailwind",
+    "css"
+  ]
+}
